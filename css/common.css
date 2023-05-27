@@ -1,0 +1,230 @@
+/* main */
+main{
+  position: relative;
+}
+main #snb #pWrapSnb{
+  position: fixed;
+  left: 0;
+  width: 210px;
+  height: 100%;
+  z-index: 4;
+  padding-top: 111px;
+  background-color: #fff ;
+  transition: 0.5s;
+}
+main #snb #pWrapSnb.active{
+  left:-210px;
+}
+
+main #snb #pWrapSnb .leftmenu .menu li.step01 .step02{
+  display: none;
+}
+
+/* iframe */
+/* main .container{
+  display: block;
+  clear: both;
+} */
+main .container{
+  position: relative;
+  padding-left : 210px;
+  padding-top: 111px;
+  transition: 0.5s;
+}
+main .container.active{
+  padding-left: 0px;
+}
+main .container .iframe{
+  width: 100%;
+  padding: 5px;
+}
+
+
+main .container .iframe .listTitle{
+    position: relative;
+    line-height: 40px;
+    box-shadow: 0 0 3px #d2d5d8;
+    margin-bottom: 10px;
+    background: #4a4944;
+  }
+  main .container .iframe .listTitle .listTitleContent{
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: #fff;
+
+  }
+  main .container .iframe .listTitle .listTitleContent .listSubTitle{
+    display: flex;
+    flex-wrap: nowrap;
+    min-width: 251px;
+  }
+
+
+  main .container .iframe .listTitle .listTitleContent .listSubTitle a#btnLnb{
+    text-align: center;
+    height: 28px;
+    width: 28px;
+    background-color: #aaa9a0;
+    color: #4a4944;
+    margin : 6px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main .container .iframe .listTitle .listTitleContent .listSubTitle a#btnLnb::after{
+    content: '\f054';
+    font-family: "fontawesome";
+  }
+  main .container .iframe .listTitle .listTitleContent .listSubTitle  span {
+    font-size: 13px;
+    font-family: '맑은 고딕';
+  }
+  main .container .iframe .listTitle .listTitleContent .listSubTitle p{
+    display: inline-block;
+    font-weight: bold;
+    font-size: 16px;
+    color: #f2e339;
+  }
+  main .container .iframe .listTitle .listTitleContent .listGnb{
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    margin: 5px 10px;
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  main .container .iframe .listTitle .listTitleContent .listGnb a{
+    height: 26px;
+  }
+
+  main .container .iframe .listSearch .searchTitle{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 10px auto;
+  }
+
+  main .container .iframe .listSearch .searchTitle img{
+    width: 16px;
+    height: 15px;
+  }
+  main .container .iframe .listSearch .searchTable{
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  main .container .iframe .listSearch .searchTable .tableSection{
+    width: calc(100% / 3);
+    float: left;
+    display: flex;
+    align-items: center;
+  }
+  main .container .iframe .listSearch .searchTable .tableSection .th{
+    padding: 20px;
+    background-color: #e7e7e5;
+    border-bottom: 1px solid #fff;
+    font-size: 13px;
+    font-family: '맑은 고딕';
+    min-width: 130px;
+    text-align: center;
+  }
+  main .container .iframe .listSearch .searchTable .tableSection .td input{
+    border : 1px solid #e7e7e5;
+    font-size: 13px;
+    min-width: 140px;
+    height: 24px;
+    margin-left: 3px;
+  }
+
+  main .container .iframe .listSearch .searchTable .tableSection .td .input02{
+    width: 150px;
+  }
+
+  main .container .iframe .listCurrent{
+    clear: both;
+  }
+
+  main .container .iframe .listCurrent .currentTitleWrap{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+
+  main .container .iframe .listCurrent .currentTitleWrap .currentTitle{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+  }
+  main .container .iframe .listCurrent .currentTitleWrap .currentBtn{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+ main .container .iframe .listCurrent .currentTitleWrap .currentBtn button{
+    width: 92px;
+    padding: 4px 8px;
+    font-size: 12px;
+    font-family: "Tahoma", sans-serif;
+    border: 1px solid #999;
+  }
+
+  main .container .iframe .listCurrent .listTable{
+    overflow: auto;
+    margin-bottom: 50px;
+  }
+ main .container .iframe .listCurrent .listTable p{
+    background-color: #aaa9a0;
+    width: 100%;
+    border: 1px solid #999;
+    color: #fff;
+    font-size: 13px;
+    font-family: '맑은 고딕';
+    padding: 7px 4px 10px 6px;
+    border: 1px solid #575c62;
+  }
+
+
+ main .container .iframe .listCurrent .listTable .currentTable{
+    width: 2000px;
+    height: 300px;      
+  }
+
+  /* media query
+  pc : 1200px ~
+  tablet : 501px ~ 1200px
+  mobile : ~ 500px
+*/
+@media screen and (max-width: 1200px){
+  main #snb #pWrapSnb { 
+        left: -210px;
+  }
+
+  main .container{
+        padding-left:0;
+    }
+
+
+  main .iframeWrap .basicInfo div{
+        width: 100%;
+    }
+
+    main .container .iframe .listSearch .searchTable .tableSection{
+      width: calc(100% / 2);
+    }
+    main .container .iframe .listTitle .listTitleContent .listGnb{
+      justify-content: flex-start;
+    }
+  }
+
+@media screen and (max-width: 500px){
+  main .container .iframe .listSearch .searchTable .tableSection{
+    width: 100%;
+  }
+
+  main .container .iframe .listTitle .listTitleContent{
+    display: block;
+  }
+}

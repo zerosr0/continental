@@ -1,0 +1,46 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+#pSearch {
+    border:1px solid; 
+    padding:10px;
+    margin:5px;
+}
+
+#pSearch,td{
+   padding:5px;
+   margin-left:10px;
+   height:30px;
+}
+
+
+#pWrapGnb {
+    margin: 0;
+    height: 70px;
+    width: 100%;
+    min-width: 1280px;
+    z-index: 9999;
+    position: fixed;
+}
+
+#pWrapLnb {
+    width: 210px;
+    max-width: 210px;
+    height: 100%;
+    padding-top: 70px;
+    position: fixed;
+    z-index: 9998;
+}
+
+#pWrap.expend{
+    padding-left: 0px;
+}
