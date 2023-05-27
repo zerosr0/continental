@@ -1,5 +1,25 @@
 @charset "utf-8";
 
+main #snb #pWrapSnb{
+    position: fixed;
+    left: 0;
+    width: 210px;
+    height: 100%;
+    z-index: 4;
+    padding-top: 111px;
+    background-color: #e7e7e5 ;
+    transition: 0.5s;
+  }
+  main #snb #pWrapSnb.active{
+    left:-210px;
+  }
+  
+  main #snb #pWrapSnb .leftmenu .menu li.step01 .step02{
+    display: none;
+  }
+
+
+
 .leftmenu .favorite {
     position: relative;
 }
@@ -271,3 +291,25 @@
     text-align: right;
 }
 /*즐겨찾기 Layout*/
+
+
+
+
+  /* media query
+  pc : 1200px ~
+  tablet : 501px ~ 1200px
+  mobile : ~ 500px
+*/
+@media screen and (max-width: 1200px){
+    main #snb #pWrapSnb { 
+          left: -210px;
+    }
+    main #snb #pWrapSnb.active { 
+      left: 0;
+  }
+
+    }
+  
+  @media screen and (max-width: 500px){
+
+  }

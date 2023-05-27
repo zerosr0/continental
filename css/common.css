@@ -2,29 +2,9 @@
 main{
   position: relative;
 }
-main #snb #pWrapSnb{
-  position: fixed;
-  left: 0;
-  width: 210px;
-  height: 100%;
-  z-index: 4;
-  padding-top: 111px;
-  background-color: #fff ;
-  transition: 0.5s;
-}
-main #snb #pWrapSnb.active{
-  left:-210px;
-}
 
-main #snb #pWrapSnb .leftmenu .menu li.step01 .step02{
-  display: none;
-}
 
 /* iframe */
-/* main .container{
-  display: block;
-  clear: both;
-} */
 main .container{
   position: relative;
   padding-left : 210px;
@@ -48,7 +28,6 @@ main .container .iframe .listTitle{
     background: #4a4944;
   }
   main .container .iframe .listTitle .listTitleContent{
-    height: auto;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -198,14 +177,12 @@ main .container .iframe .listTitle{
   mobile : ~ 500px
 */
 @media screen and (max-width: 1200px){
-  main #snb #pWrapSnb { 
-        left: -210px;
-  }
-
   main .container{
         padding-left:0;
     }
-
+    /* main .container.active{
+      padding-left:210px;
+  } */
 
   main .iframeWrap .basicInfo div{
         width: 100%;
@@ -226,5 +203,6 @@ main .container .iframe .listTitle{
 
   main .container .iframe .listTitle .listTitleContent{
     display: block;
+    padding-bottom: 1px;
   }
 }
