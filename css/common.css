@@ -118,6 +118,13 @@ main .container .iframe .listTitle{
     margin-left: 3px;
   }
 
+  .dropdown{
+    min-width: 140px;
+    height: 24px;
+    border : 1px solid #e7e7e5;
+    font-size: 13px;
+  }
+
   main .container .iframe .listSearch .searchTable .tableSection .td .input02{
     width: 150px;
   }
