@@ -82,15 +82,15 @@ header {
                     justify-content: center;
                     align-items: center;
                     width: 140px;
-                    height: 60px;
+                    height: 55px;
                 }
 
-                header .container .gnbWrap #gnb ul li .subMenu1{
+                header .container .gnbWrap #gnb .subMenu0 li .subMenu1{
                     display: none;
                     position: absolute;
                     z-index: 5;
                     flex-direction: column;
-                    top: 60px;
+                    top: 55px;
                     width: 140px;
                     background: #e6eaef;
                 }
@@ -146,28 +146,38 @@ header {
         display: none;
         position: relative;
     }
-    header .container .gnbWrap #gnbMobile .mobileMenuPanel{
-        display: none;
-        position: absolute;
-        width: 100vw;
-    }
+
         header .container .gnbWrap #gnbMobile ul li{
-            width: 20%;
+            width: 80%;
         }
-            header .container .gnbWrap #gnbMobile ul li a {
-                font-size: 20px;
-                width: 100%;
-                height: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
+            header .container .gnbWrap #gnbMobile .subMenu0 li .subMenu1{
+                display: none;
+                position: absolute;
+                top:50px;
+                left:-25px;
+                width: 350px;
+                background:#e6eaef;
+                z-index: 10;
             }
 
-                header .container .gnbWrap #gnbMobile ul li a:hover {
-                    color: #4a4944;
-                    background-color: #e6eaef;
+                header .container .gnbWrap #gnbMobile ul li a {
+                    font-size: 20px;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                 }
 
+                    header .container .gnbWrap #gnbMobile ul li a:hover {
+                        color: #4a4944;
+                        background-color: #e6eaef;
+                    }
+
+                    header .container .gnbWrap #gnbMobile .subMenu0 li .subMenu1 li .subMenu2{
+                        display: none;
+
+                    }
 
         header .container .gnbWrap #gnb > ul,
         header .container .gnbWrap #gnbMobile > ul {
@@ -177,8 +187,8 @@ header {
 
 /* media query
   pc : 1200px ~
-  tablet : 501px ~ 1200px
-  mobile : ~ 500px
+  tablet : 611px ~ 1200px
+  mobile : ~ 610px
 */
 @media screen and (max-width: 1200px) {
     /* header */
@@ -194,12 +204,15 @@ header {
     header .container .gnbWrap #gnbMobile {
         display: block;
     }
+        header .container .gnbWrap #gnbMobile .subMenu0 li:hover .subMenu1{
+            display: block;
+        }
     header .container .logoMenu .category {
         display: block;
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 610px) {
     header {
         height: 115px;
     }
@@ -215,17 +228,17 @@ header {
                 left: calc(100% - 200px);
                 width: 200px;
             }
-
-        header .container .gnbWrap #gnbMobile ul {
-            width: 100%;
-            height: 50px;
+            header .container .gnbWrap #gnbMobile{
+                width: 100%;
+                height: 50px;
+                position: absolute;
+                top:60px;
+                left: 0;
+            }
+        header .container .gnbWrap #gnbMobile .subMenu0 {
             display: flex;
             justify-content: space-around;
             padding-right: 0px;
-            position: absolute;
-            top: 60px;
-            left: 0px;
-            gap: 0;
         }
 
         header .container .gnbWrap .admin {

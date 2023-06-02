@@ -194,8 +194,8 @@ main .container .iframe .listCurrent {
 
 /* media query
   pc : 1200px ~
-  tablet : 501px ~ 1200px
-  mobile : ~ 500px
+  tablet : 611px ~ 1200px
+  mobile : ~ 610px
 */
 @media screen and (max-width: 1200px) {
     main .container {
@@ -239,7 +239,7 @@ main .container .iframe {
 
 
 
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 610px) {
         main .container .iframe .listSearch .searchTable .tableSection {
             width: 100%;
             height: 100%;

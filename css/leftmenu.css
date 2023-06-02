@@ -34,7 +34,8 @@ main #snb #pWrapSnb {
         .leftmenu .favorite ul li ul {
             display: none;
         }
-        .leftmenu .favorite ul li:hover > ul {
+        .leftmenu .favorite ul li:hover ul {
+            position: absolute;
             display: block;
             left: 100%;
             margin-top: -36px;
@@ -277,8 +278,8 @@ main #snb #pWrapSnb {
 
 /* media query
   pc : 1200px ~
-  tablet : 501px ~ 1200px
-  mobile : ~ 500px
+  tablet : 611px ~ 1200px
+  mobile : ~ 610px
 */
 @media screen and (max-width: 1200px) {
     main #snb #pWrapSnb {
@@ -290,5 +291,5 @@ main #snb #pWrapSnb {
         }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 610px) {
 }
