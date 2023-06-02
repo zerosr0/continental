@@ -9,25 +9,30 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  body{
+}
+
+body {
     color: #575c62;
     font-size: 14px;
     font-family: '맑은 고딕','Malgun Gothic',Sans-serif;
-  }
-  ol,
-  ul,
-  li {
+}
+
+ol,
+ul,
+li {
     list-style: none;
-  }
-  a {
+}
+
+a {
     text-decoration: none;
     color: #575c62;
-  }
-  h1, h2, h3, h4, h5, h6{
+}
+
+h1, h2, h3, h4, h5, h6 {
     margin: 0;
-  }
-  .hidden{
+}
+
+.hidden {
     opacity: 0;
     margin-left: -9999px;
-  }
+}
