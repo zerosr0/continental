@@ -7,7 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://kit.fontawesome.com/c0a08800fd.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://kit.fontawesome.com/c0a08800fd.js" crossorigin="anonymous"></script> -->
+    <!-- <link rel="stylesheet" type="text/css" href="fontawesome-free-5.15.1-web/css/fontawesome.min.css"> -->
+    <link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/all.min.css">
+
+
     <script defer src="js/main.js"></script>
     <!-- Jquery CDN -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
@@ -20,7 +24,7 @@
         <div class="container">
             <div class="logoMenu">
                 <a class="logoImg" href="index.html"><img src="./app/content/images/logoVtkqbox.png" alt=""></a>
-                <div class="category"><a href="#"><i class="fa-solid fa-bars"></i>카테고리</a></div>
+                <div class="category"><a href="#"><i class="fa fa-bars" aria-hidden="true"></i>카테고리</a></div>
             </div>
             <div class="gnbWrap">
                 <div class="admin">
@@ -119,58 +123,58 @@
                     <ul class="subMenu0">
                         <li>
                             <a href="#"><i class="fas fa-user-tie"></i></a>
-                            <div class="subMenu1">
+                            <div class="subMenu1 basicMenu">
                                 <ul>
-                                    <li><a href="#">기본정보관리 <i class="fa-solid fa-chevron-right"></i></a>
-                                        <div class="subMenu2">
-                                            <ul>
-                                                <li><a href="#">고객사관리</a></li>
-                                                <li><a href="#">고객사관리 FAR</a></li>
-                                                <li><a href="#">사용자관리</a></li>
-                                                <li><a href="#">회사정보관리</a></li>
-                                                <li><a href="#">Product Group 관리</a></li>
-                                                <li><a href="#">사이트코드관리</a></li>
-                                                <li><a href="#">P-SCAN 참조자관리</a></li>
-                                            </ul>
-                                        </div>
+                                    <li class="active"><a href="#">기본정보관리 <i class="fa-solid fa-chevron-right"></i></a>
                                     </li>
+                                    <div class="subMenu2 active">
+                                        <ul>
+                                            <li><a href="#">고객사관리</a></li>
+                                            <li><a href="#">고객사관리 FAR</a></li>
+                                            <li><a href="#">사용자관리</a></li>
+                                            <li><a href="#">회사정보관리</a></li>
+                                            <li><a href="#">Product Group 관리</a></li>
+                                            <li><a href="#">사이트코드관리</a></li>
+                                            <li><a href="#">P-SCAN 참조자관리</a></li>
+                                        </ul>
+                                    </div>
                                     <li><a href="#">제품정보관리<i class="fa-solid fa-chevron-right"></i></a>
-                                        <div class="subMenu2">
-                                            <ul>
-                                                <li><a href="#">기초코드현황</a></li>
-                                            </ul>
-                                        </div>
                                     </li>
+                                    <div class="subMenu2">
+                                        <ul>
+                                            <li><a href="#">기초코드현황</a></li>
+                                        </ul>
+                                    </div>
                                     <li><a href="#">코드정보관리<i class="fa-solid fa-chevron-right"></i></a>
-                                        <div class="subMenu2">
-                                            <ul>
-                                                <li><a href="#">부서코드관리</a></li>
-                                                <li><a href="#">결함코드관리</a></li>
-                                                <li><a href="#">공통코드관리</a></li>
-                                            </ul>
-                                        </div>
                                     </li>
+                                    <div class="subMenu2">
+                                        <ul>
+                                            <li><a href="#">부서코드관리</a></li>
+                                            <li><a href="#">결함코드관리</a></li>
+                                            <li><a href="#">공통코드관리</a></li>
+                                        </ul>
+                                    </div>
                                     <li><a href="#">현황관리<i class="fa-solid fa-chevron-right"></i></a>
-                                        <div class="subMenu2">
-                                            <ul>
-                                                <li><a href="#">MYJOB-전체문서현황</a></li>
-                                                <li><a href="#">MYJOB-참조문서현황</a></li>
-                                                <li><a href="#">MYJOB-담당자변경현황</a></li>
-                                                <li><a href="#">MYJOB-미처리문서현황</a></li>
-                                                <li><a href="#">게시물조회관리</a></li>
-                                            </ul>
-                                        </div>
                                     </li>
+                                    <div class="subMenu2">
+                                        <ul>
+                                            <li><a href="#">MYJOB-전체문서현황</a></li>
+                                            <li><a href="#">MYJOB-참조문서현황</a></li>
+                                            <li><a href="#">MYJOB-담당자변경현황</a></li>
+                                            <li><a href="#">MYJOB-미처리문서현황</a></li>
+                                            <li><a href="#">게시물조회관리</a></li>
+                                        </ul>
+                                    </div>
                                     <li><a href="#">로그관리<i class="fa-solid fa-chevron-right"></i></a>
-                                        <div class="subMenu2">
-                                            <ul>
-                                                <li><a href="#">접속로그현황</a></li>
-                                                <li><a href="#">다운로드로그-엑셀</a></li>
-                                                <li><a href="#">다운로드로그-파일</a></li>
-                                                <li><a href="#">부서별사용현황</a></li>
-                                            </ul>
-                                        </div>
                                     </li>
+                                    <div class="subMenu2">
+                                        <ul>
+                                            <li><a href="#">접속로그현황</a></li>
+                                            <li><a href="#">다운로드로그-엑셀</a></li>
+                                            <li><a href="#">다운로드로그-파일</a></li>
+                                            <li><a href="#">부서별사용현황</a></li>
+                                        </ul>
+                                    </div>
                                 </ul>
                             </div>
                         </li>
@@ -249,7 +253,7 @@
                     <ul class="menu">
                         <li class="step01">
                             <a id="6213ebf3-146c-4869-80d3-a7df77a089a2" href="#" class="open">
-                                <i class="fa fa-plus-square-o"></i>
+                                <i class="fa-regular fa-square-plus"></i>
                                 MYJOB
                             </a>
                             <ul class="step02">
@@ -265,7 +269,7 @@
 
                                 <li class="step02">
                                     <a id="951e87ec-40e6-48df-ae08-4e3b564f1ee4" href="#">
-                                        <i class="fa fa-plus-square-o"></i>
+                                        <i class="fa-regular fa-square-plus"></i>
                                         내처리문서
                                     </a>
                                     <ul class="step02">
@@ -291,7 +295,7 @@
 
                                 <li class="step02">
                                     <a id="3790c12e-b5fd-47a3-b850-b103dc1d146a" href="#">
-                                        <i class="fa fa-plus-square-o"></i>
+                                        <i class="fa-regular fa-square-plus"></i>
                                         내참조문서
                                     </a>
                                     <ul class="step02">
@@ -317,7 +321,7 @@
 
                                 <li class="step02">
                                     <a id="b1407979-9f08-4241-a02d-30b72b74fd8e" href="#">
-                                        <i class="fa fa-plus-square-o"></i>
+                                        <i class="fa-regular fa-square-plus"></i>
                                         내부서문서
                                     </a>
                                     <ul class="step02">
@@ -335,7 +339,7 @@
 
                                 <li class="step02">
                                     <a id="349de549-b62c-4d03-91c1-e5ea5ee1c810" href="#">
-                                        <i class="fa fa-plus-square-o"></i>
+                                        <i class="fa-regular fa-square-plus"></i>
                                         QBOX활용상태
                                     </a>
                                     <ul class="step02">
@@ -363,7 +367,7 @@
 
                         <li class="step01">
                             <a id="2019100080" href="#">
-                                <i class="fa fa-plus-square-o"></i>
+                                <i class="fa-regular fa-square-plus"></i>
                                 제품정보
                             </a>
                             <ul class="step02">
@@ -397,7 +401,7 @@
 
                         <li class="step01">
                             <a id="fc80ae0f-36d7-4927-ba2e-d357c9c2bd84" href="#">
-                                <i class="fa fa-plus-square-o"></i>
+                                <i class="fa-regular fa-square-plus"></i>
                                 고객품질
                             </a>
                             <ul class="step02">
@@ -415,7 +419,7 @@
 
                         <li class="step01">
                             <a id="dd02a5e5-9b40-4d80-9792-b2e8e92606e1" href="#">
-                                <i class="fa fa-plus-square-o"></i>
+                                <i class="fa-regular fa-square-plus"></i>
                                 개선관리
                             </a>
                             <ul class="step02">
@@ -433,7 +437,7 @@
 
                         <li class="step01">
                             <a id="abf21c5d-ff26-4b78-9652-f221b64b32d5" href="#">
-                                <i class="fa fa-plus-square-o"></i>
+                                <i class="fa-regular fa-square-plus"></i>
                                 과거품질
                             </a>
                             <ul class="step02">
@@ -467,7 +471,7 @@
 
                         <li class="step01">
                             <a id="2019100032" href="#">
-                                <i class="fa fa-plus-square-o"></i>
+                                <i class="fa-regular fa-square-plus"></i>
                                 클레임관리
                             </a>
                             <ul class="step02">
@@ -475,7 +479,7 @@
 
                                 <li class="step02">
                                     <a id="2019100033" href="#">
-                                        <i class="fa fa-plus-square-o"></i>
+                                        <i class="fa-regular fa-square-plus"></i>
                                         기초정보
                                     </a>
                                     <ul class="step02">
@@ -597,7 +601,7 @@
 
                                 <li class="step02">
                                     <a id="2019100034" href="#">
-                                        <i class="fa fa-plus-square-o"></i>
+                                        <i class="fa-regular fa-square-plus"></i>
                                         고객사클레임
                                     </a>
                                     <ul class="step02">
@@ -639,7 +643,7 @@
 
                                 <li class="step02">
                                     <a id="2019100036" href="#">
-                                        <i class="fa fa-plus-square-o"></i>
+                                        <i class="fa-regular fa-square-plus"></i>
                                         클레임분석현황
                                     </a>
                                     <ul class="step02">
@@ -699,7 +703,7 @@
 
                         <li class="step01">
                             <a id="2019100049" href="#">
-                                <i class="fa fa-plus-square-o"></i>
+                                <i class="fa-regular fa-square-plus"></i>
                                 측정장비관리
                             </a>
                             <ul class="step02">
@@ -707,7 +711,7 @@
 
                                 <li class="step02">
                                     <a id="2019100050" href="#">
-                                        <i class="fa fa-plus-square-o"></i>
+                                        <i class="fa-regular fa-square-plus"></i>
                                         코드현황
                                     </a>
                                     <ul class="step02">
@@ -757,7 +761,7 @@
 
                                 <li class="step02">
                                     <a id="2019100051" href="#">
-                                        <i class="fa fa-plus-square-o"></i>
+                                        <i class="fa-regular fa-square-plus"></i>
                                         측정장비현황
                                     </a>
                                     <ul class="step02">
@@ -815,7 +819,7 @@
 
                                 <li class="step02">
                                     <a id="2019100052" href="#">
-                                        <i class="fa fa-plus-square-o"></i>
+                                        <i class="fa-regular fa-square-plus"></i>
                                         교정계획/실적
                                     </a>
                                     <ul class="step02">
@@ -843,7 +847,7 @@
 
                         <li class="step01">
                             <a id="2020100003" href="#">
-                                <i class="fa fa-plus-square-o"></i>
+                                <i class="fa-regular fa-square-plus"></i>
                                 신뢰성시험
                             </a>
                             <ul class="step02">
@@ -907,7 +911,7 @@
 
                                 <li class="step02">
                                     <a id="2021100006" href="#">
-                                        <i class="fa fa-plus-square-o"></i>
+                                        <i class="fa-regular fa-square-plus"></i>
                                         장비관리
                                     </a>
                                     <ul class="step02">
@@ -951,7 +955,7 @@
 
                         <li class="step01">
                             <a id="2020120001" href="#">
-                                <i class="fa fa-plus-square-o"></i>
+                                <i class="fa-regular fa-square-plus"></i>
                                 고객표준
                             </a>
                             <ul class="step02">
@@ -985,7 +989,7 @@
 
                         <li class="step01">
                             <a id="2020100004" href="#">
-                                <i class="fa fa-plus-square-o"></i>
+                                <i class="fa-regular fa-square-plus"></i>
                                 기술도서관
                             </a>
                             <ul class="step02">
@@ -1041,7 +1045,7 @@
 
                                 <li class="step02">
                                     <a id="2020100005" href="#">
-                                        <i class="fa fa-plus-square-o"></i>
+                                        <i class="fa-regular fa-square-plus"></i>
                                         관리 정보
                                     </a>
                                     <ul class="step02">
@@ -1085,7 +1089,7 @@
 
                         <li class="step01">
                             <a id="2021100001" href="#">
-                                <i class="fa fa-plus-square-o"></i>
+                                <i class="fa-regular fa-square-plus"></i>
                                 VAN 메일관리
                             </a>
                             <ul class="step02">
@@ -1151,7 +1155,7 @@
 
                         <li class="step01">
                             <a id="2021100007" href="#">
-                                <i class="fa fa-plus-square-o"></i>
+                                <i class="fa-regular fa-square-plus"></i>
                                 IMDS/CAMDS 관리
                             </a>
                             <ul class="step02">
@@ -1216,7 +1220,7 @@
 
                         <li class="step01">
                             <a href="#">
-                                <i class="fa fa-plus-square-o"></i>
+                                <i class="fa-regular fa-square-plus"></i>
                                 협력사 관리
                             </a>
                             <ul class="step02">

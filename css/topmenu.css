@@ -85,24 +85,23 @@ header {
                     height: 55px;
                 }
 
-                header .container .gnbWrap #gnb .subMenu0 li .subMenu1{
-                    display: none;
-                    position: absolute;
-                    z-index: 5;
-                    flex-direction: column;
-                    top: 55px;
-                    width: 140px;
-                    background: #e6eaef;
-                }
+                    header .container .gnbWrap #gnb .subMenu0 li .subMenu1{
+                        display: none;
+                        position: absolute;
+                        z-index: 5;
+                        flex-direction: column;
+                        top: 55px;
+                        width: 100%;
+                        background: #e6eaef;
+                    }
 
                 header .container .gnbWrap #gnb ul li:hover{
                     background: #e6eaef;     
                 }
 
-
-                header .container .gnbWrap #gnb ul li:hover .subMenu1{
-                    display: flex;
-                }
+                    header .container .gnbWrap #gnb ul li:hover .subMenu1{
+                        display: flex;
+                    }
 
                 header .container .gnbWrap #gnb ul li .subMenu1 ul li{
                     position: relative;
@@ -110,36 +109,36 @@ header {
                     border: 1px solid #d2d5d8;
                     border-top: none;
                 }
-                header .container .gnbWrap #gnb ul li .subMenu1 ul li:nth-of-type(1){
-                    border-top: 1px solid #d2d5d8;
-                }
+                    header .container .gnbWrap #gnb ul li .subMenu1 ul li:nth-of-type(1){
+                        border-top: 1px solid #d2d5d8;
+                    }
 
-                header .container .gnbWrap #gnb ul li .subMenu1 > ul > li > a > i{
-                    position: absolute;
-                    right: 10px;
-                    top: 13px;
-                }
+                    header .container .gnbWrap #gnb ul li .subMenu1 ul li a i{
+                        position: absolute;
+                        right: 10px;
+                        top: 13px;
+                    }
 
-                header .container .gnbWrap #gnb ul li .subMenu1 ul li .subMenu2{
-                    position: absolute;
-                    left:138px;
-                    top: -1px;
-                    display: none;
-                    width: 180px;
-                    background:#e6eaef ;
-                }
+                    header .container .gnbWrap #gnb ul li .subMenu1 ul li .subMenu2{
+                        position: absolute;
+                        left:138px;
+                        top: -1px;
+                        display: none;
+                        width: 180px;
+                        background:#e6eaef;
+                    }
 
-                header .container .gnbWrap #gnb ul li .subMenu1 ul li .subMenu2 ul li{
-                    width: 180px;
-                }
+                        header .container .gnbWrap #gnb ul li .subMenu1 ul li .subMenu2 ul li{
+                            width: 180px;
+                        }
 
-                header .container .gnbWrap #gnb .subMenu0 li .subMenu1 > ul > li:hover a{
-                    color:#337ab7 ;
-                }
+                    header .container .gnbWrap #gnb .subMenu0 li .subMenu1 ul li:hover > a{
+                        color:#337ab7;
+                    }
 
-                header .container .gnbWrap #gnb ul li .subMenu1 > ul > li:hover .subMenu2{
-                    display: flex;
-                }
+                    header .container .gnbWrap #gnb ul li .subMenu1 > ul li:hover .subMenu2{
+                        display: flex;
+                    }
 
 
     header .container .gnbWrap #gnbMobile {
@@ -148,19 +147,20 @@ header {
     }
 
         header .container .gnbWrap #gnbMobile ul li{
-            width: 80%;
+            width: 100%;
+            /* height: 50px; */
         }
             header .container .gnbWrap #gnbMobile .subMenu0 li .subMenu1{
                 display: none;
                 position: absolute;
                 top:50px;
-                left:-25px;
-                width: 350px;
+                left:0;
+                width: 300px;
                 background:#e6eaef;
                 z-index: 10;
             }
 
-                header .container .gnbWrap #gnbMobile ul li a {
+                header .container .gnbWrap #gnbMobile .subMenu0 > li > a {
                     font-size: 20px;
                     width: 100%;
                     height: 100%;
@@ -173,11 +173,22 @@ header {
                         color: #4a4944;
                         background-color: #e6eaef;
                     }
-
-                    header .container .gnbWrap #gnbMobile .subMenu0 li .subMenu1 li .subMenu2{
-                        display: none;
-
+                    header .container .gnbWrap #gnbMobile .subMenu0 li .subMenu1 ul li{
+                        padding: 10px;
+                        border-bottom: 1px solid #d2d5d8;
+                        
                     }
+                        header .container .gnbWrap #gnbMobile .subMenu0 li .subMenu1 ul .subMenu2{
+                            display: none;
+                            width: 100%;
+                            background: #fff;
+                            transition: opacity 0.5s;
+                           
+                        }
+                        header .container .gnbWrap #gnbMobile .subMenu0 li .subMenu1 ul .subMenu2 ul li{
+                            padding:5px 10px;
+                        }
+                  
 
         header .container .gnbWrap #gnb > ul,
         header .container .gnbWrap #gnbMobile > ul {
@@ -205,6 +216,9 @@ header {
         display: block;
     }
         header .container .gnbWrap #gnbMobile .subMenu0 li:hover .subMenu1{
+            display: block;
+        }
+        header .container .gnbWrap #gnbMobile .subMenu0 li .subMenu1 ul .subMenu2.active {
             display: block;
         }
     header .container .logoMenu .category {
@@ -239,6 +253,9 @@ header {
             display: flex;
             justify-content: space-around;
             padding-right: 0px;
+        }
+        header .container .gnbWrap #gnbMobile .subMenu0 li .subMenu1{
+            width: 100vw;
         }
 
         header .container .gnbWrap .admin {
