@@ -37,6 +37,9 @@
   height: 24px;
   margin-right: 3px;
 }
+.tableFrame .tableSection .td input::placeholder{
+  padding-left: 5px;
+}
 
 .tableFrame .tableSection .tdTextarea{
   width: 100%;
