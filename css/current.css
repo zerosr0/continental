@@ -18,13 +18,14 @@ main .container .iframe .listCurrent {
     main .container .iframe .listCurrent .currentTitleWrap {
         display: flex;
         justify-content: space-between;
-        margin-top: 10px;
     }
 
         main .container .iframe .listCurrent .currentTitleWrap .currentTitle {
             display: flex;
             align-items: center;
             margin: 10px 0;
+            font-size: 15px;
+            font-weight: bolder;
         }
 
         main .container .iframe .listCurrent .currentTitleWrap .currentBtn {
@@ -69,10 +70,6 @@ main .container .iframe .listCurrent {
   mobile : ~ 610px
 */
 @media screen and (max-width: 1200px) {
-    main .container .iframe .listSearch .searchTable .tableSection {
-        width: calc(100% / 2);
-    }
-
     main .container .iframe .listTitle .listTitleContent .listGnb {
         justify-content: flex-start;
     }
@@ -80,11 +77,6 @@ main .container .iframe .listCurrent {
 
 
 @media screen and (max-width: 610px) {
-        main .container .iframe .listSearch .searchTable .tableSection {
-            width: 100%;
-            height: 100%;
-        }
-
         main .container .iframe .listTitle .listTitleContent {
             display: block;
             padding-bottom: 1px;

@@ -5,6 +5,8 @@ const snbBtn = document.querySelector(".logoMenu .category");
 const snbMenu = document.querySelector("#pWrapSnb");
 const iframe = document.querySelector('main .container');
 
+const listTitle = document.querySelector('.listTitle');
+const sec = document.querySelector('section');
 
 //topmenu mobile 버전
 gnbLi.forEach((el, idx) => {
@@ -25,12 +27,19 @@ snbBtn.onclick = (e) => {
 };
 
 
-//device size 1200px이하이면 leftmenu close
+//device size 1200px이상이면 leftmenu 다시 나타나게
 window.addEventListener("resize", () => {
-    if (window.innerWidth >= 1200) {
+    if (window.innerWidth <= 1200) {
         snbBtn.classList.remove('active');
         snbMenu.classList.remove('active');
         iframe.classList.remove('active');
+    }
+})
+
+
+window.addEventListener("resize", () => {
+    if (window.innerWidth <= 1200) {
+        sec.style.paddingTop = `${listTitle.clientHeight}px`;
     }
 })
 

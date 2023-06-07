@@ -133,10 +133,11 @@ main {
 
 .iframeTitle {
     width: 100%;
+    height: 40px;
     display: flex;
     align-items: center;
     gap: 5px;
-    margin: 10px auto;
+
 }
 
     .iframeTitle img {
