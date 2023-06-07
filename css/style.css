@@ -1,7 +1,9 @@
 @charset 'utf-8';
 @import url('./leftmenu.css');
 @import url('./topmenu.css');
-@import url('./common.css');
+@import url('./current.css');
+@import url('./register.css');
+@import url('./table.css');
 
 
 /* reset */
@@ -35,4 +37,139 @@ h1, h2, h3, h4, h5, h6 {
 .hidden {
     opacity: 0;
     margin-left: -9999px;
+}
+
+
+/* common css */
+
+main {
+    position: relative;
+}
+    main .container {
+        position: relative;
+        padding-left: 210px;
+        padding-top: 111px;
+        transition: 0.5s;
+    }
+
+        main .container.active {
+            padding-left: 0px;
+        }
+
+        main .container .iframe {
+            position: relative;
+            width: calc(100% - 14px);
+            margin: 7px;
+        }
+
+
+            main .container .iframe .listTitle {
+                position: fixed;
+                width: calc(100% - 220px);
+                line-height: 40px;
+                box-shadow: 0 0 3px #d2d5d8;
+                margin-bottom: 10px;
+                background: #4a4944;
+                z-index: 2;
+            }
+
+                main .container .iframe .listTitle .listTitleContent {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    color: #fff;
+                }
+
+                    main .container .iframe .listTitle .listTitleContent .listSubTitle {
+                        display: flex;
+                        flex-wrap: nowrap;
+                        min-width: 251px;
+                    }
+
+
+                        main .container .iframe .listTitle .listTitleContent .listSubTitle a#btnLnb {
+                            text-align: center;
+                            height: 28px;
+                            width: 28px;
+                            background-color: #aaa9a0;
+                            color: #4a4944;
+                            margin: 6px;
+                            display: inline-flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+
+                            main .container .iframe .listTitle .listTitleContent .listSubTitle a#btnLnb::after {
+                                content: '\f054';
+                                font-family: "fontawesome";
+                            }
+
+                        main .container .iframe .listTitle .listTitleContent .listSubTitle span {
+                            font-size: 13px;
+                            font-family: '맑은 고딕';
+                        }
+
+                        main .container .iframe .listTitle .listTitleContent .listSubTitle p {
+                            display: inline-block;
+                            font-weight: bold;
+                            font-size: 16px;
+                            color: #f2e339;
+                        }
+
+                    main .container .iframe .listTitle .listTitleContent .listGnb {
+                        display: flex;
+                        justify-content: space-between;
+                        gap: 5px;
+                        margin: 5px 10px;
+                        flex-wrap: wrap;
+                        height: auto;
+                    }
+
+                        main .container .iframe .listTitle .listTitleContent .listGnb a {
+                            height: 26px;
+                        }
+
+
+.iframeTitle {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 10px auto;
+}
+
+    .iframeTitle img {
+        width: 16px;
+        height: 15px;
+    }
+
+.listSearch{
+    padding-top: 40px;
+}
+
+@media screen and (max-width: 1200px) {
+    main .container {
+        padding-left: 0;
+    }
+        main .container .iframe {
+            min-height: calc(100vh - 110px);
+        }
+    /* main .container .iframe iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+    } */
+    main .container .iframe .listTitle{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    main .container .iframe {
+        min-height: calc(100vh - 64px);
+    }
 }

@@ -148,7 +148,6 @@ header {
 
         header .container .gnbWrap #gnbMobile ul li{
             width: 100%;
-            /* height: 50px; */
         }
             header .container .gnbWrap #gnbMobile .subMenu0 li .subMenu1{
                 display: none;
