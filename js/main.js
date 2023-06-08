@@ -36,10 +36,10 @@ window.addEventListener("resize", () => {
     }
 })
 
-
+window.onload = () => {
+    sec.style.paddingTop = `${listTitle.clientHeight}px`;
+}
 window.addEventListener("resize", () => {
-    if (window.innerWidth <= 1200) {
-        sec.style.paddingTop = `${listTitle.clientHeight}px`;
-    }
+    sec.style.paddingTop = `${listTitle.clientHeight}px`;
 })
 
