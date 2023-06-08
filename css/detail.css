@@ -1,0 +1,36 @@
+@charset 'utf-8';
+
+.iframeTitle{
+  width: 100%;
+}
+.iframeTitle p{
+  font-weight: bolder;
+  font-size: 15px;
+}
+.iframe section{
+  padding-top: 40px;
+}
+
+.sec2Content{
+  width: 100%;
+}
+
+
+
+
+
+@media screen and (max-width: 610px) {
+  .sec3Content .tableFrame .tableSection{
+    height: 82px;
+  }
+  .sec3Content .tableFrame .tableSection .th{
+    width: 150px;
+    padding: 40px 8px;
+  }
+  .sec3Content .tableFrame .tableSection .td{
+    height: 82px;
+  }
+  .sec3Content .tableFrame .tableSection .tableHead{
+    width: calc(100% - 145px);
+  }
+}
