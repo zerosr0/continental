@@ -3,24 +3,37 @@
 .iframeTitle{
   width: 100%;
 }
-.iframeTitle p{
-  font-weight: bolder;
-  font-size: 15px;
-}
-.iframe section{
-  padding-top: 40px;
-}
+  .iframeTitle p{
+    font-weight: bolder;
+    font-size: 15px;
+  }
+  .iframe section{
+    padding-top: 40px;
+  }
 
-section{
-  content:'';
-  display: block;
-  clear: both;
-}
 .sec1 {
   float: right;
   margin-right: 15px;
 }
+  .sec1 .sec1Content .apprWrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+  }   
+    .sec1 .sec1Content .apprWrap p{
+      height: 20px;
+    }
+    .sec1 .sec1Content .apprWrap .status{
+      width: 100%;
+      text-align: center;
+      background-color: #e7e7e5;
+    }
 
+.sec2{
+  float: left;
+}
  .sec2Content{
   width: 100%;
 }
@@ -31,13 +44,45 @@ section{
       height: 103px;
     }
 
+.sec3{
+  float: left;
+  width: 100%;
+}
+  .sec3 .sec3Content{
+    height: 300px;
+    overflow-x: scroll;
+  }
+    .sec3 .sec3Content p {
+      width: 1500px;
+    }
+
+.sec4{
+  float: left;
+  width: 100%;
+}
+
+.sec5{
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+  .sec5 .sec5Content .tableSection{
+    width: 100%;
+    border: 1px solid #e7e7e5;
+  }
+
 
 
 
 @media screen and (max-width: 610px) {
-  .sec2Content .tableFrame .devSent{
+   .sec2Content .tableFrame .devSent{
     height: 105px;
   }
 
+   .sec2Content .tableFrame .tableSection .th{
+    min-width: 118px;
+    max-width: 118px;
+    padding: 18px 0;
+  }
 
 }

@@ -5,7 +5,7 @@ main #snb #pWrapSnb {
     position: fixed;
     left: 0;
     width: 210px;
-    height: 100%;
+    height: 100vh;
     z-index: 3;
     padding-top: 110px;
     background-color: #e7e7e5;
@@ -17,6 +17,16 @@ main #snb #pWrapSnb {
         left: -210px;
     }
     
+.leftmenu{
+    height: 100%;
+    overflow-y: scroll;
+    -ms-overflow-style: none; /* 인터넷 익스플로러 */
+    scrollbar-width: none; /* 파이어폭스 */
+}
+    /* ( 크롬, 사파리, 오페라, 엣지 ) 동작 */
+    .leftmenu::-webkit-scrollbar {
+        display: none;
+    }   
 .leftmenu .favorite ul {
     width: 100%;
     position: relative;

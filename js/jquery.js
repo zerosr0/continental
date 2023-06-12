@@ -13,5 +13,11 @@ $(function () {
     $('li.step02').on("click", function () {
         $(this).children('ul.step03').slideToggle();
     })
+
+    let sec_height = $('.tableFrame .tableSection').height;
+    let td_height = $('.tableFrame .tableSection .td').height;
+
+
+    $('.tableFrame .tableSection .th').css('height', sec_height + 'px');
 })
 
